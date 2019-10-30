@@ -1,0 +1,432 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .header-top-area {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .hreder-bottom-area {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main-menu ul li {
+        margin-left: 15px;
+    }
+    .slider-content h1 {
+        padding-top: 25px;
+        padding-bottom: 21px;
+        display: inline-block;
+    }
+    .slider-active button.slick-prev {
+        left: 0px;
+    }
+    .slider-active button.slick-next {
+        right: 2px;
+        transition: .4s;
+    }
+    .features-title p {
+        font-size: 14px;
+        transition: .4s;
+    }
+    .single-features h4 {
+        font-size: 16px;
+    }
+    .features-title.culture img {
+        margin-left: 124px;
+    }
+    .single-business h4 {
+        font-size: 19px;
+    }
+    .footer-icon > a {
+        margin-right: 14px;
+    }
+
+    /*Product Detail Page*/
+    /* Product Details*/
+    .procuct-image-1 img {
+        width: 960vh;
+        margin-top: 0px;
+    }
+    .procuct-image-2 img {
+        width: 960vh;
+        margin-top: 0px;
+    }
+    .procuct-image-3 img {
+        width: 960vh;
+        margin-top: 0px;
+    }
+    .procuct-image-4 img {
+        width: 960vh;
+        margin-top: 0px;
+    }
+    .procuct-image-5 img {
+        width: 960vh;
+        margin-top: 0px;
+    }
+    .procuct-image-6 img {
+        width: 960vh;
+        margin-top: 0px;
+    }
+    .procuct-image-7 img {
+        width: 960vh;
+        margin-top: 0px;
+    }
+    .procuct-image-8 img {
+        width: 960vh;
+        margin-top: 0px;
+    }
+    .procuct-image-9 img {
+        width: 960vh;
+        margin-top: 0px;
+    }
+    .section-title.text-center {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+
+
+
+
+}
+
+ 
+/* =================== Tablet desktop 768px =================
+     ===========Range    {768 === to=== 992}     ============ 
+============================================Tablet desktop :*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-menu ul li ul.submenu li a {
+        text-transform: capitalize;  
+    }
+    .wrapper-box {
+        padding-left: 25px;
+        padding-right: 25px;
+    }    
+    .header-top-area {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .hreder-bottom-area.pl-60.pr-60 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .main-menu ul li {
+        margin-left: 8px;
+    }
+    .main-menu ul li > a {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 30px 0;
+    }
+    .slider-active button.slick-prev {
+        visibility: hidden;
+    }
+    .slider-active button.slick-next {
+       visibility: hidden;
+    }
+
+    .features-title h2 {
+        font-size: 35px;
+    }
+    .features-title p {
+        font-size: 13px;
+    }
+   
+    .single-features h4 {
+        font-size: 12px;
+    }
+    .features-title.culture img {
+        margin-left: 68px;
+    }
+    .single-business h4 {
+        font-size: 14px;
+        top: 170px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .activiies-content h3 {
+        font-size: 17px;
+    }
+
+    .footer-widget h3 {
+        font-size: 20px;
+    }
+    .footer-info li {
+        font-size: 13px;
+    }
+    .footer-link li a {
+        font-size: 12px;
+    }
+    .footer-widget p {
+        font-size: 13px;
+    }
+    form {
+        font-size: 11px;
+    }
+    .footer-icon a {
+        font-size: 11px;
+    }
+
+    /*About Page*/
+    .features-area {
+        margin-bottom: 23px;
+        margin-top: 15px;
+    }.showText p {
+        padding-bottom: 0px;
+    }
+    .tab-image-1 {
+        margin-top: 0px;
+    }
+    .footer-icon > a {
+        margin-right: 11px;
+    }
+
+    /*portfolio-area start */
+    .portfolio-menu > button {
+          margin: 0 0px;
+        padding: 10px 8px;
+    }
+    .about-title-2 h2 {
+        font-size: 36px;
+    }
+    .section-title h2{
+        font-size: 30px;
+    }
+    .section-title.text-center {
+        margin-bottom: 30px;
+    }
+
+    /* Product Details*/
+    .procuct-image-1 img {
+        width: 688vh;
+        margin-top: 0px;
+    }
+    .procuct-image-2 img {
+        width: 688vh;
+        margin-top: 0px;
+    }
+    .procuct-image-3 img {
+        width: 688vh;
+        margin-top: 0px;
+    }
+    .procuct-image-4 img {
+        width: 688vh;
+        margin-top: 0px;
+    }
+    .procuct-image-5 img {
+        width: 688vh;
+        margin-top: 0px;
+    }
+    .procuct-image-6 img {
+        width: 688vh;
+        margin-top: 0px;
+    }
+    .procuct-image-7 img {
+        width: 688vh;
+        margin-top: 0px;
+    }
+    .procuct-image-8 img {
+        width: 688vh;
+        margin-top: 0px;
+    }
+    .procuct-image-9 img {
+        width: 688vh;
+        margin-top: 0px;
+    }
+    .section-title.text-center {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+/* small mobile :320px. ======== Range 576 to 767 ===============*/
+@media (max-width: 767px) {
+    .header-top-area {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .slider-area {
+        margin-top: 11px;
+    }
+    .about-title-2 span {
+        top: 89px;
+    }
+    .features-title.pt-100 {
+        padding-top: 50px;
+    }
+    .product-detail-title {
+        font-size: 30px;
+    
+    }
+    .ourbusiness-area {
+        padding-top: 1px;
+        padding-bottom: 21px;
+    }
+    .about-content {
+        padding-bottom: 24px;
+    }
+    .logo img {
+        padding-top: 14px;
+    }
+    .slider-content h1 {
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 7px;
+        margin-top: 10px;
+    }
+    .main-menu ul li ul.submenu li a {
+        text-transform: capitalize;  
+    }
+    .features-title h2 {
+        font-size: 33px;
+    }
+    .features-title p {
+        font-size: 13px;
+    }
+    .promotion-info h4 {
+        font-size: 12px;
+    }
+    .features-title.culture img {
+        margin-left: 2px;
+    }
+    .single-business h4 {
+        font-size: 11px;
+        top: 81px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .single-counter span {
+        font-size: 15px;
+    }
+    .single-counter p {
+        font-size: 9px;
+    }
+
+    .activiies-content h3 {
+        font-size: 15px;
+        padding-top: 17px;
+    }
+    .activiies-content p {
+        font-size: 10px;
+    }
+    .activiies-content a {
+        margin-top: 18px;
+    }
+
+    .btn {
+        font-size: 11px;
+        font-weight: 400;
+        padding: 15px 18px;
+    }
+
+
+    .single-counter img {
+        height: 50px;
+    }
+
+    .copyright-text p {
+        font-size: 14px;
+    }
+    /*About Page*/
+    .showText p {
+        padding-bottom: 0px;
+    }
+    .tab-image-1 {
+        margin-top: 0px;
+    }
+    /*Product/Protfolio Pages*/
+    .section-title {
+        margin-bottom: 7px;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .portfolio-menu > button {
+        margin: 3px 8px;      
+    }
+
+    /*Product-Detail-Page*/
+    .section-title.text-center {
+        padding-top: 10px;
+        padding-bottom: 42px;
+    }
+    .product-content h3 {
+        padding-bottom: 0px;
+    }
+    .procuct-image-1 img {
+        margin-top: 1px;
+    }
+    .procuct-image-2 img {
+        margin-top: 0px;
+    }
+    .procuct-image-3 img {
+        margin-top: 0px;
+    }
+    .procuct-image-4 img {
+        margin-top: 0px;
+    }
+    .procuct-image-5 img {
+        margin-top: 0px;
+    }
+    .procuct-image-6 img {
+        margin-top: 0px;
+    }
+    .procuct-image-7 img {
+        margin-top: 0px;
+    }
+    .procuct-image-8 img {
+        margin-top: 0px;
+    }
+    .procuct-image-9 img {
+        margin-top: 0px;
+    }
+    .counter-wrapper{
+        padding-top: 10px;
+    }
+    
+    /*Application Pages*/
+    .about-title-2 h2 {
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+
+.main-menu ul li ul.submenu li a {
+    text-transform: capitalize;  
+}
+
+
+
+
+
+
+
+}

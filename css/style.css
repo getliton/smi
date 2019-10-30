@@ -1,0 +1,1120 @@
+/*
+  Theme Name: Name -
+  Author:
+  Support: admin@gmail.com
+  Description:
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,800|Work+Sans:400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap');
+
+body {
+	font-family: 'Work Sans','Raleway', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+	
+}
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+.fix {
+	overflow: hidden;
+}
+a,
+.button {
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: yellowgreen;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	color: #313131;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 17px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #222;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #222222;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+/* button style */
+.btn {
+	background: #2A4C8C none repeat scroll 0 0;
+	border: 1px solid transparent;
+	border-radius: 0px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: poppins;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	margin-bottom: 0;
+	padding: 20px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+}
+
+.breadcrumb-item a {
+	color: #fff;
+	font-weight: 500;
+	
+}
+.breadcrumb {
+	background-color: transparent;
+	justify-content: end;
+	padding: 0;
+}
+
+/* scrollUp */
+#scrollUp {
+	background: #2B96CC;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+}
+#scrollUp:hover {
+	background: #444;
+}
+
+
+/* =================== Header Top Area ====================*/
+	.social-icon{
+		padding-left: 30px;
+	}
+	.social-icon > a {
+		color: #fff;
+		font-size: 14px;
+		margin-right: 0px;
+		height: 45px;
+		width: 45px;
+		display: inline-block;
+		text-align: center;
+		border-radius: 30px;
+		line-height: 45px;
+	}
+	.social-icon > a:hover {
+		color: #222;
+		background: #fff;
+		transition: .4s ease;
+	}
+	.header-top-area{
+		color: #fff;
+	}
+	.header-right {
+		margin-top: 12px;
+	}
+	.header-right li {
+		display: inline-block;
+		margin-left: 30px;
+		position: relative;
+	}
+	.header-right ul li a {
+		color: #fff;
+		font-size: 16px;
+	}
+	.search-form{
+		position: absolute;
+		right:0 ;
+		width: 200px;
+		transition: .4s;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 99;
+	}
+	.header-right li:hover .search-form {
+		visibility: visible;
+		opacity: 1;
+	}
+	.header-right ul li a:hover {
+		color: #2B96CC;
+	}
+	.search-form input{
+		right: 0;
+		padding: 0 15px;
+		height: 45px;
+		width: 100%;
+	}
+	.search-form button{
+		background: none;
+		border: none;
+		color: #646464;
+		line-height: 45px;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		width: 48px;
+	}
+	.logo{
+		z-index: -9999;
+	}
+/* ================ End Header Top Area ==================*/
+
+
+/* ========================= Header Bottom Area / Main Menu-Area ========================== */
+	
+	/*+++++++++++++  Skikey Menu  +++++++++++*/
+
+		.hreder-bottom-area.header-sticky.sticky {
+			background: #fff;
+			border-bottom: 1px solid #3359A0;
+			transition: .4s;
+			z-index: 9999999;
+			transition: .4s;
+			}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			}
+
+	/* ++++++++++  End Skikey Menu  ++++++++++++++*/
+
+ 	.main-menu ul li> a {
+		color: #333;
+		display: inline-block;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 48px 0;
+		font-family: sans-serif;
+		text-transform: uppercase;
+	}
+	.main-menu ul li {
+		display: inline-block;
+		margin-left: 50px;
+		position: relative;
+		}
+	.main-menu ul li:hover>a{
+		color: #3359A0;
+	}
+	.main-menu ul li ul.submenu {
+		background:  #3359A0;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		top: 110%;
+		transition: all 0.3s ease 0s;
+		visibility: hidden;
+		width: 200px;
+		z-index: 9;
+	}
+	.main-menu ul li:hover > ul.submenu{
+		opacity: 1;
+		visibility:	visible;
+		top:100%;
+	}
+	.main-menu ul li ul.submenu li {
+	border-bottom: 1px solid #f1f1f2;
+	display: block;
+	margin: 0;
+	}
+	.main-menu ul li ul.submenu li:last-child{
+		border: 0;
+	}
+	.main-menu ul li ul.submenu li a {
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+	text-align: left;
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: 400;
+	text-transform: capitalize;  
+	}
+	.main-menu ul li ul.submenu li:hover > a{
+		margin-left: 5px;
+		transition: .4s;
+	}
+
+	.main-menu ul li ul.submenu li ul.submenu {
+	left: 100%;
+	top: 0;
+	}
+/* ==========================End Header Bottom Area / End Main Menu-area========================= */
+
+
+
+/* ========================== Slider-Area================================ */
+		.single-slider.slider-height {
+			min-height: 600px;
+			background-size: cover;
+			background-position: top center;
+		}
+
+		.slider-content span {
+			font-family: poppins;
+			font-size: 14px;
+			letter-spacing: 6px;
+			text-transform: uppercase;
+			display: block;
+			font-weight: 600;
+			color: #222;
+		}
+		.slider-content h1 {
+			color: #333;
+			font-size: 60px;
+			font-weight: 700;
+			line-height: 60px;
+			margin-bottom: 12px;
+			margin-top: 18px;
+		}
+		.slider-content p {
+		color: #414149;
+		font-size: 17px;
+		line-height: 30px;
+		margin-bottom: 40px;
+		padding-right: 120px;
+		}
+		.single-slider.height-100 {
+		background-position: center center;
+		background-size: cover;
+		height: 100vh;
+		}
+		.slide-img.slider-full > img {
+		width: 75%;
+		}
+
+	/* Slider Active button Next-Prev CSS Start*/
+
+		.slider-active button.slick-arrow {
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			transform: translateY(-50%);
+			background: none;
+			border: 0;
+			width: 30px;
+			height: 30px;
+			border-radius: 30px;
+			font-size: 15px;
+			padding: 0;
+			color: #222;
+			z-index: 9;
+			border-radius:30px;
+			font-weight: 600;
+			cursor: pointer;
+			display: inline-block
+			}
+		.slider-active button:hover.slick-arrow{
+			background: #eceff8;
+			display: inline-block;
+			}
+		.slider-active button.slick-next{
+			left: auto;
+			right:10px
+			}
+	/* Slider Active button Next-Prev CSS End*/
+
+	/*Slider-dots-style Start*/
+
+		.slider-active .slick-dots {
+			text-align: center;
+			bottom: 30px;
+			z-index: 99;
+			position: absolute;
+			left: 0;
+			right: 0;
+			}
+		.slider-active .slick-dots li {
+			display: inline-block;
+			margin: 0 4px
+			}
+		.slider-active .slick-dots li button {
+			background: no-repeat;
+			border: 2px solid #222;
+			height: 15px;
+			width: 15px;
+			text-indent: -9999px;
+			background:none;
+			transition: .3s;
+			padding: 0;
+			border-radius: 10px;
+			cursor: pointer;
+			}
+		.slider-active .slick-dots li.slick-active button{
+			height: 15px;
+			background:#fff;
+			cursor: pointer;
+		}
+	/*Slider-dots-style End*/
+
+/*=========================================== End Slider Area ====================================== */
+
+
+
+/*Features/About US Area Start*/
+
+	.about-content p {
+		padding-top: 32px;
+		color: #474747;
+		text-align: justify;
+		font-size: 19px;
+		line-height: 35px;
+	}
+	.features-title h2 {
+		text-transform: uppercase;
+		text-align: center;
+		color: #0e6bae;
+		font-size: 50px;
+		font-weight: 500;
+	}
+	.features-title span {
+		background: #b6b8ba;
+		width: 151px;
+		height: 2px;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.single-features{
+		cursor: pointer;
+	}
+	.features-title p {
+		padding-top: 32px;
+		color: #474747;
+		text-align: center;
+		font-size: 17px;
+		padding-bottom: 30px;
+	}
+
+	.single-features h4 {
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-transform: capitalize;
+	}
+	.single-features:hover h4 {
+		color: #72bf44;
+		transition: .4s;
+	}
+
+/* Promotion Area Start */
+	.promotion-img img {
+		border: 1px solid;
+		position: relative;
+	}
+	.promotion-info {
+		position: absolute;
+		top: 83%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	} 
+	
+	.promotion-wrapper:hover {
+		color: #72bf44;
+		cursor: pointer;
+		transition: .3s;
+	}
+	.promotion-wrapper:hover h4 {
+		color: #72bf44;
+		cursor: pointer;
+		transition: .3s;
+	}
+	.promotion-info h4 {
+		text-align: center;
+	}
+
+
+
+/*Our Business Area Start*/
+	.single-business h4 {
+		color: #1B1B1B;
+		cursor: pointer;
+		font-size: 23px;
+		font-weight: 600;
+		padding-top: 25px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.single-business:hover h4 {
+		color:#72bf44;
+		transition: .4s;
+		cursor: pointer;
+	}
+	.ourbusiness-area p {
+		padding-top: 30px;
+		padding-bottom: 21px;
+		text-align: center;
+	}
+/*Our Business Area End*/
+
+
+/*=============================== Counter Area Start ====================*/
+	.counter-area {
+		background-size: cover;
+	}
+	.single-counter {
+		margin-left: -17px;
+	}
+	.single-counter img {
+		padding-top: 42px;
+	}
+	
+	.single-counter span {
+		color: #fff;
+		display: block;
+		font-family: sans-serif;
+		font-size: 28px;
+		font-weight: 500;
+		padding-top: 42px;
+		}
+	.single-counter p {
+		color: #fff;
+		font-size: 15px;
+		text-transform: uppercase;
+		padding-bottom: 26px;
+	} 
+
+
+/*Our Market Area Start*/
+#map{
+	min-height: 400px;
+	width: 100%;
+}
+/*=============================== End Counter Area Start ====================*/
+
+
+/* ===================== Brand Area Area Start ================================*/
+.single-brand a {
+	font-size: 18px;
+	font-weight: 600;
+	color: darkblue;
+  }
+  .single-brand a:hover {
+	color:  #222;
+  }
+/* ===================== End Brand Area  ================================*/
+
+
+
+
+
+/*============================== Footer  Area Start =================================*/
+.footer-widget > h3 {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 25px;
+	color: #005BAB;
+	text-transform: uppercase;
+  }
+  .footer-info > li {
+	color: #222;
+	font-size: 17px;
+	line-height: 36px;
+  }
+  .footer-link > li {
+	float: left;
+	width: 50%;
+  }
+  .footer-link li a {
+	color: #222;
+	display: inline-block;
+	font-size: 17px;
+	line-height: 36px;
+	position: relative;
+  }
+  .footer-link li a:hover{
+	  color: #0e6bae;
+	}
+  .footer-link li a::before {
+	content: "";
+	font-family: fontawesome;
+	left: 0;
+	position: absolute;
+	top: 0;
+  }
+  .footer-widget > form {
+	position: relative;
+  }
+  .footer-widget form input {
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	height: 40px;
+	padding: 0 15px;
+	width: 100%;
+  }
+  .footer-widget form button {
+	background:#3b3f42;
+	border: 0 none;
+	color: #fff;
+	font-weight: 600;
+	height: 100%;
+	padding: 0 15px;
+	position: absolute;
+	right: 0;
+	text-transform: uppercase;
+  }
+  .footer-icon > a {
+	color: #3b3f42;
+	font-size: 14px;
+	margin-right: 30px;
+	height: 50px;
+	width: 50px;
+	background: #005BAB;
+	display: inline-block;
+	text-align: center;
+	line-height: 47px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 18px;
+	border: 1px solid #ddd;
+	transition: .3s ease;
+}
+.footer-icon > a:hover {
+	color: #005BAB;
+	background: #fff;
+	transition: .3s;
+	border: 1px solid #005BAB;
+}
+  .copyright-area{
+	background: #005BAB;
+	
+  }
+  .copyright-text > p {
+	margin: 0;
+	color: #fff;
+	text-transform: uppercase;
+  }
+  /*====================================== End Footer Area ======================================*/
+
+  /*=========================== Page-2 About.Html portfolio area CSS Start===================================*/
+		.about-title-2 h2 {
+			padding-top: 50px;
+			padding-bottom: 17px;
+			color: #ffffff;
+			font-size: 50px;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		.about-title-2 span {
+			height: 3px;
+			width: 112px;
+			position: absolute;
+			left: 15px;
+			right: 0;
+			background: #72bf44;
+			top: 112px;
+		}
+		.clr {
+			clear: both;
+		}
+
+		img {
+			border: 0;
+		}
+
+		.pagewrap {
+			position: relative;
+			width: 1200px;
+			margin: 0 auto;
+			font-family:'Work Sans','Raleway';
+		}
+		/* 
+		.padding_pagewrap {
+			padding: 0 10px;
+		} */
+
+		.showText p {
+			padding-bottom: 15px;
+			font-size: 16px;
+			line-height: 30px;
+			text-align: justify;
+		}
+		#pro_tabs .tabs {
+			border-top: none;
+		}
+		#pro_tabs {
+			margin-bottom: 20px;
+			text-align: center; /* margin-top: 20px; */
+		}
+		.box_tab {
+			margin: 0;
+			border-bottom: solid 2px hsl(208, 58%, 62%); /* border-top: solid 1px #e3e3e3; */
+		}
+
+		/*====Tab Link By Using W2 School=====*/
+		/* Style the tab */
+		/* Style the tab */
+		.tab {
+			overflow: hidden;
+			/* border: 1px solid #ccc; */
+			background-color: #f1f1f1;
+		}
+		.tab-head h4 {
+			font-size: 22px;
+			font-weight: 600;
+			color: green;
+		}
+		.tab-content p {
+			color: #222;
+		}
+		
+		.tab button {
+			color: #222;
+			/* margin-top: 13px; */
+		}
+		/* Style the buttons inside the tab */
+			.tab button {
+				float: left;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				padding: 14px 16px;
+				transition: 0.3s;
+				font-size: 17px;
+			}
+		/* Create an active/current tablink class */
+			.tab button.active {
+				background: #005BAB;
+				color: #fff;
+			}
+		
+		/* Style the tab content */
+			.tabcontent {
+				display: none;
+				padding: 6px 12px;
+				border: 1px solid #ccc;
+				border-top: none;
+			}
+		
+		/* Style the close button */
+			.topright {
+				float: right;
+				cursor: pointer;
+				font-size: 28px;
+			}
+			
+			.topright:hover {color: red;}
+
+			.fas.fa-paint-brush {
+				margin-right: 15px;
+				color: #2ecc71;
+			}
+		/* Style the tab-image */
+			.tab-image-1 {
+				margin-top: 42px;
+			}
+			.tab-image-2 {
+				margin-top: 41px;
+			}
+		
+/*=====End Tab Link By Using W2 School=====*/
+
+
+
+/*=======================================
+ Our Products Page Start
+========================================*/
+	.section-title h2 {
+		color: #005BAB;
+		font-weight: 600;
+	}
+	.portfolio-thumb {
+		position: relative;
+		overflow: hidden;
+	}
+	.portfolio-thumb::before {
+	background: rgb(63, 153, 231) none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1;
+	}
+	.portfolio-wrapper:hover .portfolio-thumb::before{
+		opacity: .85;
+		visibility: visible;
+		}
+	.portfolio-thumb > img {
+		width: 100%;
+		transition: .3s;
+	}
+	.portfolio-wrapper:hover .portfolio-thumb > img{
+		transform: scale(1.2) rotate(7deg);
+		}
+	.portfolio-content {
+		left: 0;
+		padding: 30px;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: .3s;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 9;
+	}
+
+	.portfolio-content span {
+		background: #fff;
+		color: #222;
+	}
+	.portfolio-wrapper:hover .portfolio-content{
+		opacity: 1;
+		visibility: visible;
+		}
+	.portfolio-wrapper {
+		position: relative;
+	}
+	.portfolio-content > h3 {
+		color: #2f3440;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	.portfolio-content > h3:hover a{
+		color: #fff;
+	}
+	.icon a {
+	display: inline-block;
+	height: 20px;
+	margin-bottom: 10px;
+	position: relative;
+	width: 20px;
+	}
+	.icon a::before ,.icon a::after {
+		background: #414149 none repeat scroll 0 0;
+		content: "";
+		height: 2px;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		width: 20px;
+	}
+	.icon a::after {
+	height: 20px;
+	top: -9px;
+	width: 2px;
+	}
+	.portfolio-menu > button {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: medium none;
+	color: #3b3f42;
+	cursor: pointer;
+	font-weight: 600;
+	margin: 0 8px;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	}
+	.portfolio-menu > button:focus {
+	outline: 0 none;
+	}
+	.portfolio-menu > button:hover, .portfolio-menu > button.active {
+		background: #005BAB;
+		color: #fff;
+	}  
+
+/*======================================
+ End Our Products Page
+ ===================================== */
+
+
+
+
+/*======================================
+ Product Detail 
+ ===================================== */
+	.product-detail-title {
+		color: #005BAB;
+		font-size: 48px;
+		font-weight: 600;
+	}
+
+	.section-title.text-center span {
+		width: 123px;
+		height: 2px;
+		content: "";
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: #72bf44;
+		position: absolute;
+	}
+ 	.product-content p {
+		font-size: 15px;
+		color: #222;
+		text-align: justify;
+		line-height: 27px;
+	}
+	.product-content a {
+		color: #222;
+		cursor: pointer;
+	  }
+	.product-content h3 {
+		color: green;
+		font-weight: 600;
+		text-transform: uppercase;
+		padding-bottom: 10px;
+		/* text-decoration: underline; */
+	}
+
+	.procuct-image-1 img {
+		height: 241px;
+		width: 539px;
+		margin-top: 52px;
+	}
+	.procuct-image-2 img {
+		height: 215px;
+		width: 539px;
+		margin-top: 51px;
+	}
+	.procuct-image-3 img {
+		height: 240px;
+		width: 539px;
+		margin-top: 52px;
+	}
+	.procuct-image-4 img {
+		height: 242px;
+		width: 539px;
+		margin-top: 51px;
+	}
+	.procuct-image-5 img {
+		height: 242px;
+		width: 539px;
+		margin-top: 51px;
+	}
+	.procuct-image-6 img {
+		height: 263px;
+		width: 539px;
+		margin-top: 51px;
+	}
+	.procuct-image-7 img {
+		height: 239px;
+		width: 539px;
+		margin-top: 51px;
+	}
+	.procuct-image-8 img {
+		height: 152px;
+		width: 539px;
+		margin-top: 58px;
+	}
+	.procuct-image-9 img {
+		height: 216px;
+		width: 539px;
+		margin-top: 24px;
+	}
+/*======================================
+ End Product Detail 
+ ===================================== */
+
+
+
+/*======================================
+	"Application Area Start "
+ ===================================== */
+
+	.applications p.apps {
+		text-align: center;
+		background: #005BAB;
+		font-size: 15px;
+		color: #fff;
+		font-weight: 600;
+		padding-top: 15px;
+		padding-bottom: 5px;
+	}
+	.application-content p {
+		color: #222;
+		padding-top: 20px;
+	}
+
+
+/*======================================
+	"End Application Area"
+ ===================================== */
+
+
+ 
+/*======================================
+	"Career Area"
+ ===================================== */
+	.career-form {
+		border: 2px solid;
+		padding: 10px;
+	}
+	.career-form h3 {
+		color: green;
+		font-weight: 600;
+		text-align: center;
+	}
+	#send {
+		border-radius: 5px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background: #254485;
+	}
+	#send:hover {
+		background: #0062cc;
+	}
+	#clear {
+		border-radius: 5px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background: #254485;
+	}
+	#clear:hover {
+		background:  #0062cc;
+	}
+
+
+
+/*======================================
+	" End Career Area"
+ ===================================== */
+
